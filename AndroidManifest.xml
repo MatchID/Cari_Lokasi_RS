@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cemerlang.rs"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-feature android:name="android.hardware.bluetooth" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/> 
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.cemerlang.rs.Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.cemerlang.rs.RS_Detail" android:label="@string/app_name"></activity>
+         <activity android:name="com.cemerlang.rs.List_RS_Terdekat" android:label="@string/app_name"></activity>
+           <activity android:name="com.cemerlang.rs.About" android:label="@string/app_name"></activity>
+            <activity android:name="com.cemerlang.rs.Cari_Lokasi" android:label="@string/app_name"></activity>
+        <activity android:name="com.cemerlang.rs.Lokasi_Peta" android:label="@string/app_name"></activity>
+        <activity android:name="com.cemerlang.rs.Peta" android:label="@string/app_name"></activity>
+        <activity android:name="com.cemerlang.rs.Utama" android:label="@string/app_name"></activity>
+        <activity android:name="com.cemerlang.rs.List_RS" android:label="@string/app_name"></activity>
+        
+                
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDpwJB6s7Gm0ayjFZWlCw0tXovsDvSOU8A" />  
+            
+        <meta-data
+                android:name="com.google.android.gms.version"
+                android:value="@integer/google_play_services_version" />
+        
+    </application>
+
+</manifest>
